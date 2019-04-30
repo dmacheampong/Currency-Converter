@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+
+    "name": "Currency Converter Plugin",
+    "version": "1.0",
+    "description": "This extension will convert a chosen currency amount to a another form of currency with current exchange rates provided by https://fixer.io.",
+
+    "browser_action": {
+        "default_icon": "cc_icon.png",
+        "default_popup": "cc_popup.html"
+    },
+    
+    "content_scripts": [
+        {
+            "css": ["css/styles.css"]
+        }
+    ],
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js; object-src 'self'",
+
+    "permissions": [
+        "activeTab"
+    ]
+}
