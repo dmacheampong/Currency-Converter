@@ -12,7 +12,8 @@
     
     "content_scripts": [
         {
-            "css": ["css/styles.css"]
+            "matches": ["http://*/*"],
+            "js": ["js/cc_popup.js"]
         }
     ],
     "content_security_policy": "script-src 'self' https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js; object-src 'self'",
