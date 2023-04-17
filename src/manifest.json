@@ -1,0 +1,22 @@
+{
+    "name": "XChange Currency Converter",
+    "version": "1.0",
+    "description": "This extension will convert a chosen currency amount to a another form of currency with current exchange rates provided by https://fixer.io.",
+    "permissions": ["activeTab", "tabs"],
+    "host_permissions": ["*://*/"],
+    "content_security_policy": {
+      "extension_pages":  "script-src 'self'; object-src 'self'"
+      },
+    "action": {
+        "default_icon": "icon.png",
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*/"],
+        "js": ["index.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "manifest_version": 3
+  }

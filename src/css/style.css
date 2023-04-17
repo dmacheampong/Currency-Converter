@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(18, 3, 92);
+    color: green;
+}
+
+.header {
+    display: flex;
+    font-style: italic;
+}
